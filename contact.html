@@ -20,14 +20,29 @@
     </header>
     <main>
         <section>
-            <h2>Get in Touch</h2>
-            <p>Feel free to reach out to me via the following platforms. I am always open to advice, guidance, or a good conversation.</p>
-            <ul>
-                <li>Email: <a href="mailto:marcelinolalaniz@gmail.com">marcelinolalaniz@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/marcelinoalaniz/">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://github.com/marcelinoalaniz">GitHub</a></li>
-            </ul>
-        </section>
+    <h2>Get in Touch</h2>
+    <p>Feel free to reach out to me using the form below. I'll get back to you as soon as possible!</p>
+    
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p>Or connect with me on:</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/marcelinoalaniz/">LinkedIn</a></li>
+        <li><a href="https://github.com/marcelinoalaniz">GitHub</a></li>
+    </ul>
+</section>
+
     </main>
     <footer>
         <p>© 2025 Marcelino Alaniz</p>
