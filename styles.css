@@ -1,4 +1,4 @@
-/* styles.css */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,39 +7,85 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background-color: #004080;
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
 main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* Resume PDF Embed */
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004080;
+    color: white;
     margin-top: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
