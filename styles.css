@@ -80,3 +80,13 @@ footer {
     background: #0077ff;
     color: #fff;
 }
+/* Subtle Glow Animation */
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #00f7ff; }
+    50% { text-shadow: 0 0 15px #00f7ff; }
+    100% { text-shadow: 0 0 5px #00f7ff; }
+}
+
+h1 {
+    animation: neonGlow 1.5s infinite alternate;
+}
