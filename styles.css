@@ -157,3 +157,10 @@ button:hover {
     background: #ffcc00;
     box-shadow: 0 0 10px #ffcc00;
 }
+.profile-pic {
+    display: block;
+    max-width: 200px;  /* Adjust size */
+    border-radius: 50%; /* Circular shape */
+    margin: 10px auto; /* Center image */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Cool EE glow effect */
+}
