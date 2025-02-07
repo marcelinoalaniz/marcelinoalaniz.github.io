@@ -10,12 +10,36 @@ body {
     text-align: center;
 }
 
-/* Header */
-/* Header */
 header {
-    background: #008000; /* Solid circuit board green */
+    background-color: #008000; /* Solid circuit board green */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before, header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,255,128,0.3) 10%, rgba(0,0,0,0) 70%);
+    top: 0;
+    left: 0;
+    mix-blend-mode: overlay;
+    animation: circuit-animation 3s infinite linear alternate;
+}
+
+@keyframes circuit-animation {
+    0% { transform: translateX(-10px) translateY(-10px); }
+    100% { transform: translateX(10px) translateY(10px); }
+}
+
+}
+
+@keyframes circuit-animation {
+    0% { transform: translateX(-10px) translateY(-10px); }
+    100% { transform: translateX(10px) translateY(10px); }
 }
 
 
