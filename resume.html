@@ -1,32 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>My Resume</h1>
-        <nav>
+<main>
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Lunar Rover — Rice Robotics ELEC Team Lead</h3>
+            <span class="project-dates">Fall 2024 – Present</span>
+            <p>
+                Leading a team of 10 in designing a lunar rover for the University Rover Competition, focusing on robust power and navigation systems.
+            </p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>Coordinated weekly meetings, delegated tasks, and troubleshooted system issues.</li>
+                <li>Created a 36V/5A power-distribution system for stable power to motors and sensors.</li>
+                <li>Developed C/C++ navigation protocols for Arduino/ESP32, enabling precise rover movement.</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Resume (last updated 02/05/2025</h2>
-            <iframe src="Marcelino Alaniz Resume.pdf" width="100%" height="600px"></iframe>
-            <p><a href="Marcelino Alaniz Resume.pdf" download>Download Resume (PDF)</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Marcelino Alaniz</p>
-    </footer>
-</body>
-</html>
+            <a href="https://github.com/BrianoAden/Rover-ELEC.git" target="_blank">GitHub Repo</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Autonomous Lane-Keeping RC Car</h3>
+            <span class="project-dates">Spring 2025 – Jun 2025</span>
+            <p>
+                Built a real-time, autonomous RC car using computer vision and embedded Linux, enabling accurate lane detection and following.
+            </p>
+            <ul>
+                <li>Wrote real-time driver for Raspberry Pi 5, improving system responsiveness.</li>
+                <li>Designed OpenCV-based lane-keeping algorithm for reliable road detection.</li>
+                <li>Implemented Linux kernel modules for seamless vehicle control.</li>
+            </ul>
+            <a href="https://www.hackster.io/team-meow-mobile/the-meow-mobile-91b0bd" target="_blank">Project Details</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Speed Gun using MSPS003F3</h3>
+            <span class="project-dates">Spring 2025 – Jun 2025</span>
+            <p>
+                Engineered a custom speed measurement device with a microcontroller and ultrasonic sensor, achieving high-precision velocity calculations.
+            </p>
+            <ul>
+                <li>Designed PCB and supporting circuitry, with integrated buzzers and multicolor LEDs.</li>
+                <li>Wrote interrupt-driven embedded C code for accurate speed and distance measurements.</li>
+                <li>Used finite state machine (FSM) to optimize real-time computation and power usage.</li>
+            </ul>
+            <a href="https://nkh5.github.io/ELEC327-Final-Project/" target="_blank">See Project</a>
+        </div>
+    </section>
+</main>
